@@ -11,9 +11,6 @@ export default function Home() {
     border: "5px solid $wowGreen",
   });
 
-  // <head>
-  //   <meta name="awesome" />
-  // </head>
   return (
     <div>
       stitch <Button>something</Button> <WowButton>together</WowButton>

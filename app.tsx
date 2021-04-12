@@ -1,12 +1,10 @@
 import React, { ComponentType } from "react";
 import { getCssString } from "~/lib/stitches.ts";
-// import { InjectStitches } from "~/lib/stitches.ts";
-// import { InjectStitchesFactory } from "~/lib/stitches.ts";
 import "./app.css";
 
 const InjectStitches = () => (
   <head>
-    <style>{getCssString()}</style>
+    <style type="text/css" id="stitches">{getCssString()}</style>
   </head>
 );
 
@@ -21,6 +19,7 @@ export default function App({
     <main className="app__main">
       <head>
         <meta name="viewport" content="width=device-width" />
+        <style type="text/css" id="stitches"></style>
       </head>
       <Page {...pageProps} />
       <InjectStitches />

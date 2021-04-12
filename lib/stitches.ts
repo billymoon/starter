@@ -4,7 +4,7 @@ export const { styled, css, getCssString } = createCss({
   theme: {
     colors: {
       wowRed: "pink",
-      wowGreen: "red",
+      wowGreen: "orange",
     },
     space: {
       1: "5px",
@@ -38,8 +38,9 @@ export const { styled, css, getCssString } = createCss({
     xl: "@media (min-width: 1280px)",
   },
   utils: {
-    p: (config) => (value) => ({
-      padding: value,
-    }),
+    p: (config) =>
+      (value) => ({
+        padding: value,
+      }),
   },
 });
