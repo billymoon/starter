@@ -53,6 +53,7 @@ export default function Home() {
         </a>
       </p>
       <Counter />
+      <Counter />
       <p className="page__paragraph page__copyinfo">
         Built by Aleph.js in Deno {version}
       </p>
