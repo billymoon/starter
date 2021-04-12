@@ -3,8 +3,10 @@ import { createCss } from "https://esm.sh/@stitches/react";
 export const { styled, css, getCssString } = createCss({
   theme: {
     colors: {
-      wowRed: "pink",
-      wowGreen: "orange",
+      wowRed: "red",
+      wowGreen: "lime",
+      white: "#fff",
+      black: "#321",
     },
     space: {
       1: "5px",
