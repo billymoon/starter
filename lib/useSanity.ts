@@ -74,21 +74,3 @@ export default function useSanity() {
   console.log({ sanity });
   return sanity;
 }
-
-// async function runExample() {
-//   const client = sanityClient(sanityConfig);
-
-//   // const query = `
-//   // * [_type == $type] {
-//   //   _id,
-//   //   title,
-//   //   "cool": true
-//   // }[0...$limit]
-//   // `;
-
-//   const query = `*[_type == 'templates']`
-
-//   await client.fetch(query, { type: "post", limit: 2 }).then(console.log);
-// }
-
-// runExample();

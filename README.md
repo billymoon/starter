@@ -30,3 +30,9 @@ Make sure you have a project created in sanity, so you can consum the data by
 providing config in an env var
 
     SANITY_CONFIG='{"projectId":"XXXXXXXX"}' aleph dev
+
+## Code hygene
+
+Format code with deno to keep whitespace issues out of git
+
+    deno --unstable fmt --ignore=.aleph
