@@ -3,8 +3,8 @@ import { createCss } from "https://esm.sh/@stitches/react";
 export const { styled, css, getCssString } = createCss({
   theme: {
     colors: {
-      wowRed: "red",
-      wowGreen: "blue",
+      wowRed: "pink",
+      wowGreen: "red",
     },
     space: {
       1: "5px",
@@ -38,9 +38,8 @@ export const { styled, css, getCssString } = createCss({
     xl: "@media (min-width: 1280px)",
   },
   utils: {
-    p: (config) =>
-      (value) => ({
-        padding: value,
-      }),
+    p: (config) => (value) => ({
+      padding: value,
+    }),
   },
 });
