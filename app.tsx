@@ -19,7 +19,7 @@ export default function App({
     <main className="app__main">
       <head>
         <meta name="viewport" content="width=device-width" />
-        <style type="text/css" id="stitches"></style>
+        <style type="text/css" id="stitches" />
       </head>
       <Page {...pageProps} />
       <InjectStitches />
