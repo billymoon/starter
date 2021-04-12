@@ -67,7 +67,10 @@ export default function useSanity() {
 
   const client = sanityClient(sanityConfig);
 
-  const sanity = useCallback((query, params = {}) => client.fetch(query, params), []);
+  const sanity = useCallback(
+    (query, params = {}) => client.fetch(query, params),
+    [],
+  );
   console.log({ sanity });
   return sanity;
 }
