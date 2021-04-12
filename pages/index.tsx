@@ -2,10 +2,17 @@ import { useDeno } from 'framework/react'
 import React from 'react'
 import Logo from '~/components/logo.tsx'
 import useCounter from '~/lib/useCounter.ts'
+import useSanity from '~/lib/useSanity.ts'
 
 export default function Home() {
   const [count, isSyncing, increase, decrease] = useCounter()
   const version = useDeno(() => Deno.version.deno)
+  const content = useDeno(async () => {
+    const sanity = useSanity()
+    return btoa(JSON.stringify(await sanity(`*`)))
+  })
+
+  console.log(JSON.parse(atob(content)))
 
   return (
     <div className="page">

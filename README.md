@@ -19,3 +19,9 @@ And versions used were
     deno 1.8.3
     v8 9.0.257.3
     typescript 4.2.2
+
+## Development
+
+Make sure you have a project created in sanity, so you can consum the data by providing config in an env var
+
+    SANITY_CONFIG='{"projectId":"XXXXXXXX"}' aleph dev
